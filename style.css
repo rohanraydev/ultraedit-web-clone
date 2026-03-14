@@ -1,0 +1,380 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* MAIN NAVBAR CONTAINER */
+
+.navbar {
+    width:90%;
+    max-width:1400px;
+    margin:20px auto;
+    background-color: #eeeeee;
+    border: 1px solid #ddd;
+    height: 70px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    border-radius: 8px;
+    position: sticky;
+    top: 10px;
+    /* align-items: center; */
+}
+
+/* NAVBAR LOGO  */
+
+.logo {
+    display: flex;
+    margin-left: 10px;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+}
+
+.main-logo {
+    height: 42px;
+    width: 42px;
+    background-color: #f2c94c;
+    border-radius: 50%;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.logo-text-1 { 
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+.logo-text-2 {
+    font-size: 11px;
+    font-weight: 600;
+    color: #777;
+}
+
+
+
+/* NAVBAR MENU */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    font-weight: 500;
+}
+
+.menu-list li {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-list a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-list li:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #f2c94c;
+}
+
+.menu-list li:hover a {
+    color: #f2c94c;
+}
+
+/* SECTION 3 */
+
+.mini-set {
+    padding: 15px;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: flex-end;
+    align-items: center;
+    height: auto;
+    width: auto;
+    gap: 16px;
+}
+
+.nav-download-button {
+    background-color: #f2c94c;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-download-button:hover {
+    background-color: #e0b93f
+}
+
+.sec-text-1 {
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 6px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sec-text-2 {
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    padding: 6px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sec-text-1:hover,
+.sec-text-2:hover {
+    background-color: #d4d4d4;
+}
+
+.menu-list li:hover,
+.nav-download-button:hover,
+.sec-text-1:hover,
+.sec-text-2:hover {
+  transition: 0.2s ease;
+}
+
+.hamburger {
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+@media (max-width: 768px) {
+    .menu,
+    .nav-download-button,
+    .sec-text-1 {
+        display: none;
+    }
+
+    .logo {
+        gap: 8px;
+    }
+    .hamburger {
+        display: block;
+    }
+    
+    .navbar {
+        grid-template-columns: 1fr auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+@media(max-width:480px){
+
+    .hero {
+        gap:30px;
+    }
+
+    .box-content {
+        padding:15px;
+    }
+
+    .hero-text-1{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .hero-text-3{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+
+.main {
+    padding: 50px 10px;
+}
+
+
+.hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.hero-text-1 {
+    color: #222222;
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.hero-img {
+    height: 48px;
+    width: 49px;
+}
+
+.hero-text-2 {
+    font-size: 16px;
+    color: #808080;
+    font-weight: 400;
+    margin: auto;
+    max-width: 500px;
+}
+
+.hero-section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-download {
+    display: inline-flex;
+    background-color: #FFD741;
+    text-decoration: none;
+    color: #222222;
+    padding: 15px 20px;
+    border-radius: 8px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.hero-download:hover,
+.box-button:hover {
+    background-color: #e0b93f
+}
+
+.hero-text-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo2 {
+    height: 60px;
+    width: 60px;
+}
+
+.downloads {
+    margin: 30px auto;
+    width: 90%;
+    max-width: 1400px;
+}
+
+.sec-downloads {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.box {
+    width: 100%;
+    background-color: #F2F0EC;
+    border: 1px solid grey;
+    border-radius: 14px;
+    padding-bottom: 10px;
+}
+
+.box-content {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222222;
+}
+
+.box-subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222222;
+    margin-top: 14px;
+}
+
+.box-button {
+    display: inline-flex;
+    background-color: #FFD741;
+    font-size: 14px;
+    border: none;
+    color: #222222;
+    padding: 10px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.box-meta-1 {
+    font-size: 10px;
+    margin-top: 8px;
+}
+
+.box-meta-2 {
+    font-size: clamp(4px, 5vw, 8px);
+    margin-top: 3px;
+}
+
+@media (max-width: 1024px) {
+    .sec-downloads {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 540px) {
+    .sec-downloads {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
