@@ -1,9 +1,9 @@
 UltraEdit Landing Page Clone
 
-This project is a fully responsive landing page built using HTML and CSS.
+This project is a responsive landing page built using HTML and CSS.
 
 Features:
-• Fully responsive (mobile, tablet, desktop)
+• Responsive (mobile, tablet, desktop)
 • Grid + Flexbox layout
 • Clean UI design
 • Tested on real devices
