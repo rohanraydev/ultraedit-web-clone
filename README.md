@@ -9,4 +9,4 @@ Features:
 • Tested on real devices
 
 Tech Used:
-HTML, CSS only!
+HTML, CSS 
